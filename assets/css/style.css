@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+
+}
+
+body {
+    background-color: rgb(72, 135, 228);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url('https://www.designyourway.net/blog/wp-content/uploads/2018/08/a0026461_508d3d23cd366.jpg') no-repeat center/cover;
+
+}
+
+i.fa-solid.fa-droplet {
+    color: #41a6fb;
+}
+
+i.fa-solid.fa-temperature-half {
+    color: #cb0000;
+}
+i.fa-solid.fa-wind {
+    color: #a8bdd0;
+}
+
+body.thunderstorm {
+    background: url('/assets/img/thunderstorm.jfif') no-repeat center/cover;
+}
+
+body.drizzle {
+    background: url('/assets/img/drizzle.jfif') no-repeat center/cover;
+}
+
+body.rain {
+    background: url('/assets/img/rain.jpg') no-repeat center/cover;
+}
+
+body.snow {
+    background: url('/assets/img/snow.jpg') no-repeat center/cover;
+}
+
+body.atmosphere {
+    background: url('/assets/img/atmosphere.jpg') no-repeat center/cover;
+}
+
+body.clear {
+    background: url('/assets/img/clear.jpg') no-repeat center/cover;
+}
+
+body.clouds {
+    background: url('/assets/img/clouds.jpg') no-repeat center/cover;
+}
+
+.right-part.thunderstorm {
+    background: url('/assets/img/thunderstorm.jfif') no-repeat center/cover;
+}
+
+.right-part.drizzle {
+    background: url('/assets/img/drizzle.jfif') no-repeat center/cover;
+}
+
+.right-part.rain {
+    background: url('/assets/img/rain.jpg') no-repeat center/cover;
+}
+
+.right-part.snow {
+    background: url('/assets/img/snow.jpg') no-repeat center/cover;
+}
+
+.right-part.atmosphere {
+    background: url('/assets/img/atmosphere.jpg') no-repeat center/cover;
+}
+
+.right-part.clear {
+    background: url('/assets/img/clear.jpg') no-repeat center/cover;
+}
+
+.right-part.clouds {
+    background: url('/assets/img/clouds.jpg') no-repeat center/cover;
+}
+
+
+
+#root {
+    background-color: #fff;
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+/* left part - start */
+
+.left-part{
+    width: 60%;
+    padding: 40px;
+    background-color: rgb(193, 226, 255);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search {
+    padding: 12px;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    
+}
+
+.search-btn {
+    padding: 12px;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+select#country-select {
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    font-size: 11.5px;
+}
+
+.left-part .weather-forecast {
+    margin-top: 30px;
+}
+
+.left-part .location-list{
+    display: flex;
+    margin-top: 20px;
+    flex: 1;
+    gap: 20px;
+}
+
+.left-part .location{
+    overflow: hidden;
+    text-align: center;
+}
+
+.left-part .location-list img{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+}
+
+
+
+.left-part .historical-weather table{
+    width: 100%;
+}
+
+.left-part .historical-weather table tr th{
+    padding: 8px 0;
+}
+
+.left-part .historical-weather .week .date {
+    margin-top: 10px;
+}
+
+.left-part .historical-weather ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+
+/* right part - start */
+
+.right-part{
+    width: 40%;
+    background: url('https://www.designyourway.net/blog/wp-content/uploads/2018/08/a0026461_508d3d23cd366.jpg') no-repeat center/cover;
+}
+
+.cover {
+    padding: 40px;
+    background-color: rgba(0, 1, 8, 0.76);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.right-part .header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.right-part .current-weather {
+    text-align: center;
+}
+
+.right-part .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-part .date h3{
+    margin-bottom: 10px;
+}
+
+.right-part .icon {
+    /* margin: 20px 0 10px 0; */
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+
+.right-part  .temp {
+    font-size: 80px;
+}
+
+.right-part .location {
+    margin: 20px;
+}
+
+.right-part .analysis {
+
+}
+
+.right-part .analysis ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}

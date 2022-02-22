@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Weather App</title>
+</head>
+<body>
+    <script type="text/javascript" src="./assets/js/app.js" defer></script>
+    
+    <div id="root">
+        <div class="left-part">
+            <div class="historical-weather">
+                <table>
+                    <tr>
+                 
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="right-part">
+            <div class="cover">
+
+                <div class="search-box">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="search" type="text" placeholder="Tên địa điểm">
+                    <select name="country" id="country-select">
+                        <option value="VN">Việt Nam</option>
+                        <option value="US">Mỹ</option>
+                        <option value="CN">Trung Quốc</option>
+                        <option value="GB">Anh</option>
+                        <option value="JP">Nhật</option>
+                        <option value="KR">Hàn</option>
+                    </select>
+                    <!-- <div class="filter">All location</div> -->
+                </div>
+                <div class="current-weather">
+                    <div class="date">
+                        <div class="text">
+                            <h3>Thời tiết hôm nay</h3>
+                            <p></p>
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <div class="temp"></div>
+                    <div class="desc"></div>
+                    <div class="location"></div>
+                </div>
+                <div class="analysis">
+                    
+                </div>
+            </div>
+                
+        </div> 
+    </div>
+</body>
+</html>
