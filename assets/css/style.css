@@ -31,62 +31,33 @@ i.fa-solid.fa-wind {
     color: #a8bdd0;
 }
 
-body.thunderstorm {
+.right-part.thunderstorm, body.thunderstorm {
     background: url('/assets/img/thunderstorm.jfif') no-repeat center/cover;
 }
 
-body.drizzle {
+.right-part.drizzle, body.drizzle {
     background: url('/assets/img/drizzle.jfif') no-repeat center/cover;
 }
 
-body.rain {
+.right-part.rain, body.rain {
     background: url('/assets/img/rain.jpg') no-repeat center/cover;
 }
 
-body.snow {
+.right-part.snow, body.snow {
     background: url('/assets/img/snow.jpg') no-repeat center/cover;
 }
 
-body.atmosphere {
+.right-part.atmosphere, body.atmosphere {
     background: url('/assets/img/atmosphere.jpg') no-repeat center/cover;
 }
 
-body.clear {
+.right-part.clear, body.clear {
     background: url('/assets/img/clear.jpg') no-repeat center/cover;
 }
 
-body.clouds {
+.right-part.clouds, body.clouds {
     background: url('/assets/img/clouds.jpg') no-repeat center/cover;
 }
-
-.right-part.thunderstorm {
-    background: url('/assets/img/thunderstorm.jfif') no-repeat center/cover;
-}
-
-.right-part.drizzle {
-    background: url('/assets/img/drizzle.jfif') no-repeat center/cover;
-}
-
-.right-part.rain {
-    background: url('/assets/img/rain.jpg') no-repeat center/cover;
-}
-
-.right-part.snow {
-    background: url('/assets/img/snow.jpg') no-repeat center/cover;
-}
-
-.right-part.atmosphere {
-    background: url('/assets/img/atmosphere.jpg') no-repeat center/cover;
-}
-
-.right-part.clear {
-    background: url('/assets/img/clear.jpg') no-repeat center/cover;
-}
-
-.right-part.clouds {
-    background: url('/assets/img/clouds.jpg') no-repeat center/cover;
-}
-
 
 
 #root {
@@ -240,13 +211,43 @@ select#country-select {
     margin: 20px;
 }
 
-.right-part .analysis {
-
-}
 
 .right-part .analysis ul {
     display: flex;
     gap: 20px;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Mobile */
+@media (max-width: 740px) {
+    .left-part {
+        display: none;
+    }
+
+    .right-part {
+        width: 100%;
+    }
+
+    .search, select#country-select {
+        padding: 10px 0;
+    }
+    .search-btn {
+        padding: 10px;
+    }
+    .right-part .temp {
+        font-size: 50px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+
+}
+
+/* PC */
+@media (min-width: 1024px) {
+
 }
